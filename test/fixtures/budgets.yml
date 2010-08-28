@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  b_no: 
+  b_amount: 1.5
+  b_source: MyString
+  b_time: 2010-08-28 13:33:22
+  b_user_id: 
+
+two:
+  b_no: 
+  b_amount: 1.5
+  b_source: MyString
+  b_time: 2010-08-28 13:33:22
+  b_user_id: 
