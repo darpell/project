@@ -1,0 +1,28 @@
+<p>
+  <b>B no:</b>
+  <%=h @budget.b_no %>
+</p>
+
+<p>
+  <b>B amount:</b>
+  <%=h @budget.b_amount %>
+</p>
+
+<p>
+  <b>B source:</b>
+  <%=h @budget.b_source %>
+</p>
+
+<p>
+  <b>B time:</b>
+  <%=h @budget.b_time %>
+</p>
+
+<p>
+  <b>B user:</b>
+  <%=h @budget.b_user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_budget_path(@budget) %> |
+<%= link_to 'Back', budgets_path %>

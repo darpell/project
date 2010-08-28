@@ -1,0 +1,18 @@
+<p>
+  <b>A name:</b>
+  <%=h @agency.a_name %>
+</p>
+
+<p>
+  <b>A address:</b>
+  <%=h @agency.a_address %>
+</p>
+
+<p>
+  <b>A contact no:</b>
+  <%=h @agency.a_contact_no %>
+</p>
+
+
+<%= link_to 'Edit', edit_agency_path(@agency) %> |
+<%= link_to 'Back', agencies_path %>

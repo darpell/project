@@ -9,15 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100828054017) do
+ActiveRecord::Schema.define(:version => 20100828062129) do
 
   create_table "agencies", :force => true do |t|
+    t.string   "a_name"
+    t.string   "a_address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "budgets", :force => true do |t|
     t.float    "b_amount"
+    t.string   "b_source"
     t.datetime "b_time"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -36,6 +39,9 @@ ActiveRecord::Schema.define(:version => 20100828054017) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "u_name"
+    t.string   "u_address"
+    t.string   "u_email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

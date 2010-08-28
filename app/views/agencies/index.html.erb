@@ -1,0 +1,24 @@
+<h1>Listing agencies</h1>
+
+<table>
+  <tr>
+    <th>A name</th>
+    <th>A address</th>
+    <th>A contact no</th>
+  </tr>
+
+<% @agencies.each do |agency| %>
+  <tr>
+    <td><%=h agency.a_name %></td>
+    <td><%=h agency.a_address %></td>
+    <td><%=h agency.a_contact_no %></td>
+    <td><%= link_to 'Show', agency %></td>
+    <td><%= link_to 'Edit', edit_agency_path(agency) %></td>
+    <td><%= link_to 'Destroy', agency, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New agency', new_agency_path %>

@@ -1,0 +1,23 @@
+<p>
+  <b>E code:</b>
+  <%=h @equipment.e_code %>
+</p>
+
+<p>
+  <b>E name:</b>
+  <%=h @equipment.e_name %>
+</p>
+
+<p>
+  <b>E price:</b>
+  <%=h @equipment.e_price %>
+</p>
+
+<p>
+  <b>E user:</b>
+  <%=h @equipment.e_user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_equipment_path(@equipment) %> |
+<%= link_to 'Back', equipment_path %>

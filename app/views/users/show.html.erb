@@ -1,0 +1,33 @@
+<p>
+  <b>U:</b>
+  <%=h @user.u_id %>
+</p>
+
+<p>
+  <b>U name:</b>
+  <%=h @user.u_name %>
+</p>
+
+<p>
+  <b>U address:</b>
+  <%=h @user.u_address %>
+</p>
+
+<p>
+  <b>U contact no:</b>
+  <%=h @user.u_contact_no %>
+</p>
+
+<p>
+  <b>U email:</b>
+  <%=h @user.u_email %>
+</p>
+
+<p>
+  <b>U type:</b>
+  <%=h @user.u_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

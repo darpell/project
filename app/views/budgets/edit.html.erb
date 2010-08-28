@@ -1,0 +1,32 @@
+<h1>Editing budget</h1>
+
+<% form_for(@budget) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :b_no %><br />
+    <%= f.text_field :b_no %>
+  </p>
+  <p>
+    <%= f.label :b_amount %><br />
+    <%= f.text_field :b_amount %>
+  </p>
+  <p>
+    <%= f.label :b_source %><br />
+    <%= f.text_field :b_source %>
+  </p>
+  <p>
+    <%= f.label :b_time %><br />
+    <%= f.datetime_select :b_time %>
+  </p>
+  <p>
+    <%= f.label :b_user_id %><br />
+    <%= f.text_field :b_user_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @budget %> |
+<%= link_to 'Back', budgets_path %>

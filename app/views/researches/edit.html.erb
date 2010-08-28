@@ -1,0 +1,28 @@
+<h1>Editing research</h1>
+
+<% form_for(@research) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :r_title %><br />
+    <%= f.text_field :r_title %>
+  </p>
+  <p>
+    <%= f.label :r_agency_name %><br />
+    <%= f.text_field :r_agency_name %>
+  </p>
+  <p>
+    <%= f.label :r_remarks %><br />
+    <%= f.text_field :r_remarks %>
+  </p>
+  <p>
+    <%= f.label :r_id %><br />
+    <%= f.text_field :r_id %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @research %> |
+<%= link_to 'Back', researches_path %>

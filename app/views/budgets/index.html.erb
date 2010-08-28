@@ -1,0 +1,28 @@
+<h1>Listing budgets</h1>
+
+<table>
+  <tr>
+    <th>B no</th>
+    <th>B amount</th>
+    <th>B source</th>
+    <th>B time</th>
+    <th>B user</th>
+  </tr>
+
+<% @budgets.each do |budget| %>
+  <tr>
+    <td><%=h budget.b_no %></td>
+    <td><%=h budget.b_amount %></td>
+    <td><%=h budget.b_source %></td>
+    <td><%=h budget.b_time %></td>
+    <td><%=h budget.b_user_id %></td>
+    <td><%= link_to 'Show', budget %></td>
+    <td><%= link_to 'Edit', edit_budget_path(budget) %></td>
+    <td><%= link_to 'Destroy', budget, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New budget', new_budget_path %>
