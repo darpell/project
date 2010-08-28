@@ -1,0 +1,23 @@
+<p>
+  <b>File:</b>
+  <%=h @publication.file %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @publication.time %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @publication.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @publication.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_publication_path(@publication) %> |
+<%= link_to 'Back', publications_path %>

@@ -34,7 +34,7 @@ test:
   database: research_test
   pool: 5
   username: root
-  password:
+  password: p@ssw0rd
   host: localhost
 
 production:
@@ -44,5 +44,5 @@ production:
   database: research_production
   pool: 5
   username: root
-  password: 
+  password: p@ssw0rd
   host: localhost
